@@ -1,0 +1,9 @@
+// use prisma-8
+
+model Expense {
+  id          Int      @id @default(autoincrement())
+  date        TimestamptzString @default(now())
+  description String
+  payer       String
+  amount      Float
+}
